@@ -1,0 +1,30 @@
+---
+import '../styles/global.css';
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const {
+  title = 'Eight34 Labs — Web Engineering Studio',
+  description = 'An independent web engineering studio crafting brand-defining websites, bespoke full-stack applications, and lightweight telemetry infrastructure for ambitious teams.',
+} = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="icon" type="image/svg+xml" href="/E34_Short.svg" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <!-- Eight34 Analytics Tracker -->
+    <script defer src="/eight34.js" data-site="e34_landing"></script>
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>

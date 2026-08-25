@@ -1,0 +1,213 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout>
+  <div class="site-header-wrap">
+    <header class="site-header">
+      <a href="/" class="brand-wrap">
+        <img src="/E34_Short.svg" alt="Eight34" width="26" height="26" />
+        <span class="brand-name">Eight34 Labs</span>
+      </a>
+      <nav class="nav-links">
+        <a href="#services">Capabilities</a>
+        <a href="#standards">Standards</a>
+        <a href="#process">Process</a>
+        <a href="https://portfolio.e34labs.com" target="_blank" rel="noreferrer">
+          Portfolio ↗
+        </a>
+        <a class="btn-primary" href="https://app.e34labs.com">
+          Client Portal
+        </a>
+      </nav>
+      <button class="nav-hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </header>
+    <nav class="nav-drawer" id="nav-drawer">
+      <a href="#services">Capabilities</a>
+      <a href="#standards">Standards</a>
+      <a href="#process">Process</a>
+      <a href="https://portfolio.e34labs.com" target="_blank" rel="noreferrer">Portfolio ↗</a>
+      <a href="https://app.e34labs.com" style="font-weight: 600; color: var(--ink-950);">Client Portal →</a>
+    </nav>
+  </div>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-pill">
+        <span class="status-dot"></span>
+        <span>Independent Web Engineering Studio</span>
+      </div>
+
+      <h1>
+        We build websites and digital products that feel like the <em>future</em>.
+      </h1>
+
+      <p>
+        An engineering studio crafting brand-defining websites, bespoke full-stack applications, and lightweight telemetry infrastructure for ambitious teams.
+      </p>
+
+      <div class="hero-actions">
+        <a class="btn-primary" href="#contact" style="padding: 10px 22px; font-size: 14px;">
+          Start a Project ↓
+        </a>
+        <a class="btn-outline" href="https://portfolio.e34labs.com" target="_blank" rel="noreferrer" style="padding: 10px 22px; font-size: 14px;">
+          Explore Selected Work ↗
+        </a>
+      </div>
+    </section>
+
+    <!-- Services / Capabilities -->
+    <section class="section" id="services">
+      <div class="section-head">
+        <h2>Studio Capabilities</h2>
+        <p>Radical attention to typography, sub-second latency, and clean architecture.</p>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-card">
+          <span class="num">01 / EDITORIAL &amp; BRAND</span>
+          <h3>High-Velocity Brand Sites</h3>
+          <p>
+            Digital showcases engineered with zero layout shift, sub-second TTFB, fluid typography, and 100/100 Lighthouse performance benchmarks.
+          </p>
+        </div>
+
+        <div class="service-card">
+          <span class="num">02 / FULL-STACK PLATFORMS</span>
+          <h3>Modern Web Applications</h3>
+          <p>
+            Scalable SaaS products, client portals, and internal tools built on Next.js, React 19, Supabase, PostgreSQL, and TypeScript.
+          </p>
+        </div>
+
+        <div class="service-card">
+          <span class="num">03 / TELEMETRY &amp; TAGS</span>
+          <h3>Privacy-First Analytics</h3>
+          <p>
+            An ultra-lightweight 1.5KB telemetry engine embedded directly into your stack. Zero cookies, zero GDPR banners, pure clarity.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Engineering Standards -->
+    <section class="section" id="standards" style="border-top: 1px solid var(--ink-150);">
+      <div class="section-head">
+        <h2>Engineering Standards</h2>
+        <p>Every platform we build is engineered for speed, long-term stability, and minimal maintenance.</p>
+      </div>
+
+      <div class="standards-grid">
+        <div class="standard-card">
+          <div class="icon-chip">⚡</div>
+          <h3>Sub-50ms TTFB &amp; Zero Layout Shift</h3>
+          <p>
+            We optimize asset pipelines, critical render paths, and edge caching so your visitors experience instantaneous navigation without jitter.
+          </p>
+        </div>
+
+        <div class="standard-card">
+          <div class="icon-chip">🛡️</div>
+          <h3>Native TypeScript &amp; Zero Bloat</h3>
+          <p>
+            Rock-solid architectures without messy legacy plugins or unmaintainable dependencies. Everything is strictly typed and clean.
+          </p>
+        </div>
+
+        <div class="standard-card">
+          <div class="icon-chip">🎨</div>
+          <h3>Tactile Micro-Interactions</h3>
+          <p>
+            60fps GPU-accelerated motion and subtle interactive states that elevate your brand and improve visitor conversion rates.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- The Studio Process -->
+    <section class="section" id="process" style="border-top: 1px solid var(--ink-150);">
+      <div class="section-head">
+        <h2>How We Collaborate</h2>
+        <p>A transparent, high-velocity engineering process from first conversation to live deployment.</p>
+      </div>
+
+      <div class="process-grid">
+        <div class="process-step">
+          <span class="step-badge">PHASE 01</span>
+          <h3>Architecture Blueprint</h3>
+          <p>
+            We align on visual direction, technical specifications, database schema, and delivery milestones with zero ambiguity.
+          </p>
+        </div>
+
+        <div class="process-step">
+          <span class="step-badge">PHASE 02</span>
+          <h3>High-Craft Development</h3>
+          <p>
+            Continuous staging environments with weekly live walkthroughs, allowing you to test interactions and provide feedback in real time.
+          </p>
+        </div>
+
+        <div class="process-step">
+          <span class="step-badge">PHASE 03</span>
+          <h3>Production &amp; Hypercare</h3>
+          <p>
+            Edge DNS setup, Lighthouse speed audits, zero-downtime deployment, and dedicated post-launch hypercare support.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section" id="contact" style="border-top: 1px solid var(--ink-150); padding-bottom: 90px;">
+      <div class="contact-cta-box">
+        <h2>Let&apos;s build something memorable.</h2>
+        <p>
+          Have an upcoming project, brand launch, or web platform? We typically respond with technical scope within 24 hours.
+        </p>
+        <div class="contact-cta-actions">
+          <a class="btn-primary" href="mailto:hello@e34labs.com" style="padding: 12px 24px; font-size: 14.5px;">
+            Start a Conversation (hello@e34labs.com) ↗
+          </a>
+          <a class="btn-outline" href="https://portfolio.e34labs.com" target="_blank" rel="noreferrer" style="padding: 12px 24px; font-size: 14.5px;">
+            View Founder Portfolio ↗
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div>
+      © 2026 Eight34 Labs Inc. All rights reserved.
+    </div>
+    <div style="display: flex; gap: 20px; flex-wrap: wrap;">
+      <a href="https://portfolio.e34labs.com" target="_blank" rel="noreferrer">Portfolio</a>
+      <a href="https://app.e34labs.com">Client Portal</a>
+      <a href="mailto:hello@e34labs.com">hello@e34labs.com</a>
+    </div>
+  </footer>
+
+  <script is:inline>
+    const btn = document.getElementById('hamburger');
+    const drawer = document.getElementById('nav-drawer');
+    if (btn && drawer) {
+      btn.addEventListener('click', () => {
+        const open = drawer.classList.toggle('open');
+        btn.setAttribute('aria-expanded', String(open));
+      });
+      // Close drawer when any drawer link is clicked
+      drawer.querySelectorAll('a').forEach(function(a) {
+        a.addEventListener('click', function() {
+          drawer.classList.remove('open');
+          btn.setAttribute('aria-expanded', 'false');
+        });
+      });
+    }
+  </script>
+</Layout>
