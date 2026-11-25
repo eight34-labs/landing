@@ -5,28 +5,32 @@ import Layout from '../layouts/Layout.astro';
 <Layout title="Local Focus — Eight34 Labs" description="Ridgewood first, then Bergen County, then New Jersey. In-person AI setup for local businesses, one town at a time.">
   <main>
     <section class="page-hero">
-      <div class="hero-pill">
-        <span class="status-dot"></span>
-        <span>Local focus</span>
-      </div>
+      <p class="hero-label">Local focus</p>
       <h1>Ridgewood first. Then the county. <em>Then the state.</em></h1>
       <p>We&rsquo;re growing the way local trust grows — one town at a time, starting on East Ridgewood Avenue and working outward. If you&rsquo;re nearby, we can meet in person this week.</p>
+      <div class="rollout-strip">
+        <span><strong>Ridgewood</strong></span>
+        <span class="arrow" aria-hidden="true">→</span>
+        <span><strong>Bergen County</strong></span>
+        <span class="arrow" aria-hidden="true">→</span>
+        <span><strong>New Jersey</strong></span>
+      </div>
     </section>
 
     <!-- Rollout stages -->
     <section class="section" style="padding-top: 0;">
-      <div class="process-grid">
-        <div class="process-step">
+      <div class="home-base-panel">
+        <div class="home-base-row">
           <span class="step-badge">NOW · HOME BASE</span>
           <h3>Ridgewood, NJ</h3>
           <p>Where Eight34 Labs is based and where our first clients are. Downtown shops, restaurants, practices, and service businesses along Ridgewood Ave, Broad Street, and beyond.</p>
         </div>
-        <div class="process-step">
+        <div class="home-base-row">
           <span class="step-badge">NEXT · EXPANDING</span>
           <h3>Bergen County</h3>
           <p>The same in-person approach across the county — from our neighboring villages to Hackensack and the Route 4 / Route 17 corridors.</p>
         </div>
-        <div class="process-step">
+        <div class="home-base-row">
           <span class="step-badge">THEN · STATEWIDE</span>
           <h3>Across New Jersey</h3>
           <p>As the Bergen County practice grows, we&rsquo;ll bring the same playbook to main streets across the state — local first, at every step.</p>
@@ -40,7 +44,7 @@ import Layout from '../layouts/Layout.astro';
         <h2>Communities in our Bergen County orbit</h2>
         <p>One town at a time, on purpose.</p>
       </div>
-      <ul class="towns">
+      <ul class="towns towns-directory">
         <li>Ridgewood</li>
         <li>Glen Rock</li>
         <li>Wyckoff</li>

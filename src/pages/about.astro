@@ -5,10 +5,7 @@ import Layout from '../layouts/Layout.astro';
 <Layout title="About — Eight34 Labs" description="Meet Tee Jay, founder of Eight34. How Eight34 grew from a web engineering studio into an AI consultancy for local businesses in Ridgewood, Bergen County, and New Jersey.">
   <main>
     <section class="page-hero">
-      <div class="hero-pill">
-        <span class="status-dot"></span>
-        <span>About</span>
-      </div>
+      <p class="hero-label">About</p>
       <h1>Eight34 Labs, <em>rebuilt around one goal.</em></h1>
       <p>Eight34 began as a web engineering studio — building websites and digital products. The craft is the same; the mission is now focused: bring practical AI to the local businesses that big tech overlooks.</p>
     </section>
@@ -37,13 +34,9 @@ import Layout from '../layouts/Layout.astro';
         <span class="eyebrow">The goal</span>
         <h2>Make AI pay for itself — for the businesses on our own main streets first.</h2>
       </div>
-      <p style="font-size: 15px; color: var(--ink-500); max-width: 600px; margin-bottom: 40px;">
-        Start in Ridgewood. Prove it business by business across Bergen County. Then take the same honest, in-person approach across New Jersey. Every setup has to earn its keep in hours or dollars — that&rsquo;s the whole strategy.
-      </p>
-      <div class="goal-strip">
-        <div class="goal-item">Ridgewood, NJ</div>
-        <div class="goal-item">Bergen County</div>
-        <div class="goal-item">New Jersey</div>
+      <div class="manifesto-card">
+        <p class="manifesto-places"><strong>Ridgewood, NJ</strong> &nbsp;→&nbsp; <strong>Bergen County</strong> &nbsp;→&nbsp; <strong>New Jersey</strong></p>
+        <p>Start in Ridgewood. Prove it business by business across Bergen County. Then take the same honest, in-person approach across New Jersey. Every setup has to earn its keep in hours or dollars — that&rsquo;s the whole strategy.</p>
       </div>
     </section>
 
@@ -78,23 +71,23 @@ import Layout from '../layouts/Layout.astro';
         <h2>Principles</h2>
         <p>How Eight34 Labs decides things</p>
       </div>
-      <div class="principles-grid">
-        <div class="service-card">
+      <div class="ruled-rows">
+        <div class="ruled-row">
           <span class="num">01</span>
           <h3>Savings first, technology second</h3>
           <p>Every recommendation has to name the hours or dollars it gives back. A tool that can&rsquo;t do that — however impressive the demo — doesn&rsquo;t get recommended.</p>
         </div>
-        <div class="service-card">
+        <div class="ruled-row">
           <span class="num">02</span>
           <h3>Honest &ldquo;not worth it&rdquo;</h3>
           <p>Some tasks should stay human, and some businesses are already lean. Saying so, even when it costs us a project, is how a local consultancy earns the next ten years of referrals.</p>
         </div>
-        <div class="service-card">
+        <div class="ruled-row">
           <span class="num">03</span>
           <h3>Your business stays yours</h3>
           <p>Your accounts, your data, your logins, documented in a guide your team can follow. If you ever stop working with us, everything keeps running without us.</p>
         </div>
-        <div class="service-card">
+        <div class="ruled-row">
           <span class="num">04</span>
           <h3>Small steps, proven before scaled</h3>
           <p>One workflow working and paying off before the next begins. It&rsquo;s slower to sell and much better to own — which is the side of the table we sit on with you.</p>

@@ -4,19 +4,29 @@ import Layout from '../layouts/Layout.astro';
 
 <Layout title="Services — Eight34 Labs" description="Four AI services for local businesses: audit, customer communication, back-office automation, and training — plus a worksheet to size up your own busywork.">
   <main>
-    <section class="page-hero">
-      <div class="hero-pill">
-        <span class="status-dot"></span>
-        <span>Services</span>
+    <section class="page-hero page-hero--split">
+      <div class="services-split">
+        <div>
+          <p class="hero-label">Services</p>
+          <h1>Everything is aimed at one thing: <em>lower costs, fewer wasted hours.</em></h1>
+          <p>Four services, taken in order — or just the one you need. Each one ends with something working in your business, not a report that sits in a drawer.</p>
+        </div>
+        <aside class="index-box" aria-label="Services at a glance">
+          <span class="num">AT A GLANCE</span>
+          <ol>
+            <li><span>01</span>AI Opportunity Audit</li>
+            <li><span>02</span>Customer Communication</li>
+            <li><span>03</span>Back-Office Automation</li>
+            <li><span>04</span>Training &amp; Ongoing Support</li>
+          </ol>
+        </aside>
       </div>
-      <h1>Everything is aimed at one thing: <em>lower costs, fewer wasted hours.</em></h1>
-      <p>Four services, taken in order — or just the one you need. Each one ends with something working in your business, not a report that sits in a drawer.</p>
     </section>
 
     <!-- The four services -->
     <section class="section" style="padding-top: 0;">
-      <div class="services-grid">
-        <div class="service-card">
+      <div class="service-rows">
+        <div class="service-row">
           <span class="num">SERVICE 01</span>
           <h3>AI Opportunity Audit</h3>
           <p>A focused review of how your business runs day to day. We shadow the routine work — calls, inbox, scheduling, paperwork — and produce a short, ranked plan.</p>
@@ -27,7 +37,7 @@ import Layout from '../layouts/Layout.astro';
             <li>Clear next step, whether or not you hire us further</li>
           </ul>
         </div>
-        <div class="service-card">
+        <div class="service-row">
           <span class="num">SERVICE 02</span>
           <h3>Customer Communication</h3>
           <p>The questions your customers ask every day — hours, availability, prices, directions, policies — answered accurately and instantly, with a human always one step away.</p>
@@ -39,7 +49,7 @@ import Layout from '../layouts/Layout.astro';
           </ul>
           <p style="margin-top: 12px; font-size: 12.5px; color: var(--ink-400);">Restaurants · Salons &amp; clinics · Retail · Home services</p>
         </div>
-        <div class="service-card">
+        <div class="service-row">
           <span class="num">SERVICE 03</span>
           <h3>Back-Office Automation</h3>
           <p>The invisible work: invoices, data entry, scheduling, reminders, document drafting, inventory lists. We connect the tools you already use so information stops being typed twice.</p>
@@ -51,7 +61,7 @@ import Layout from '../layouts/Layout.astro';
           </ul>
           <p style="margin-top: 12px; font-size: 12.5px; color: var(--ink-400);">Offices · Contractors · Clinics · Agencies</p>
         </div>
-        <div class="service-card">
+        <div class="service-row">
           <span class="num">SERVICE 04</span>
           <h3>Training &amp; Ongoing Support</h3>
           <p>Tools only save money when people actually use them. We train your team in short, practical sessions and stay available as the tools — and your business — change.</p>

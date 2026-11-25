@@ -4,11 +4,8 @@ import Layout from '../layouts/Layout.astro';
 
 <Layout title="Contact — Eight34 Labs" description="Tell Tee Jay where your week goes. Fill in the form and get a ready-to-send inquiry, or reach Tee Jay directly on LinkedIn.">
   <main>
-    <section class="page-hero">
-      <div class="hero-pill">
-        <span class="status-dot"></span>
-        <span>Contact</span>
-      </div>
+    <section class="page-hero page-hero--ruled">
+      <p class="hero-label">Contact</p>
       <h1>Contact us</h1>
       <p>Tell us where your week goes.</p>
       <p>Fill this in and we&rsquo;ll turn it into a ready-to-send inquiry you can copy — or reach Tee Jay directly on LinkedIn. No newsletter, no spam, no obligation.</p>
@@ -17,7 +14,7 @@ import Layout from '../layouts/Layout.astro';
     <!-- Contact intro cards -->
     <section class="section" style="padding-top: 0;">
       <div class="services-grid">
-        <div class="service-card">
+        <div class="service-card fastest-route-card">
           <span class="num">FASTEST ROUTE</span>
           <h3>Fastest route</h3>
           <p>Message Tee Jay on LinkedIn — it&rsquo;s where Eight34 Labs conversations start.</p>
@@ -43,7 +40,7 @@ import Layout from '../layouts/Layout.astro';
         <h2>Build your inquiry</h2>
         <p>Your inquiry, ready to send</p>
       </div>
-      <div class="form-card">
+      <div class="form-card form-panel">
         <label for="c-name">Your name</label>
         <input type="text" id="c-name" autocomplete="name" />
 
@@ -78,7 +75,7 @@ import Layout from '../layouts/Layout.astro';
 
         <label for="c-output" style="margin-top: 24px;">Your inquiry, ready to send</label>
         <textarea id="c-output" readonly rows="8" placeholder="Fill in the fields above, then choose “Build my inquiry message”."></textarea>
-        <p id="c-status" style="font-size: 13px; color: var(--ink-500); margin-top: 8px;"></p>
+        <p id="c-status" class="form-status"></p>
       </div>
     </section>
 
