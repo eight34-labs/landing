@@ -315,19 +315,6 @@
   max-width: 640px;
 }
 
-.manifesto-card {
-  background: var(--ink-950);
-  border-radius: 24px;
-  padding: 40px 36px;
-}
-
-.manifesto-card p {
-  font-size: 15px;
-  color: var(--ink-300);
-  line-height: 1.6;
-  max-width: 640px;
-}
-
 .ruled-rows {
   border-top: 1px solid var(--ink-150);
 }
@@ -426,10 +413,6 @@
 
   .timeline {
     padding-left: 24px;
-  }
-
-  .manifesto-card {
-    padding: 28px 20px;
   }
 
   .ruled-row {
