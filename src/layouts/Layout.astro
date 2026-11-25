@@ -5,11 +5,13 @@ import '../styles/consultancy.css';
 interface Props {
   title?: string;
   description?: string;
+  skyWash?: boolean;
 }
 
 const {
   title = 'Eight34 Labs — AI Consultancy for Local Business',
   description = 'Eight34 Labs helps shops, restaurants, offices, and service businesses find the few places AI genuinely cuts costs and hours — then sets it up for you.',
+  skyWash = false,
 } = Astro.props;
 ---
 
@@ -23,7 +25,7 @@ const {
     <link rel="icon" type="image/svg+xml" href="/E34_Short.svg" />
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
   </head>
-  <body>
+  <body class={skyWash ? 'sky-wash' : undefined}>
     <div class="site-header-wrap">
       <header class="site-header">
         <a href="/" class="brand-wrap">

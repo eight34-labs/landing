@@ -37,6 +37,7 @@ npm run preview
 ## Notes
 
 - Contact: hello@e34labs.com, and Tee Jay on LinkedIn at https://www.linkedin.com/in/teejay834/
+- Home hero photo: wildflower bloom, U.S. Bureau of Land Management, Applegate Field Office — public domain, via Wikimedia Commons. It is referenced by its Commons URL in `src/styles/global.css` because the GitHub connector used for pushes is text-only and cannot push binary files; an identical local copy is staged at `public/meadow.jpg` for any direct git push.
 - The former portfolio site, analytics platform / client portal, backend, and sales-team ERM repositories are archived and private, and are not linked from this site.
 - No analytics tracker. All JavaScript is inline and client-side only.
 
