@@ -3,211 +3,166 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout>
-  <div class="site-header-wrap">
-    <header class="site-header">
-      <a href="/" class="brand-wrap">
-        <img src="/E34_Short.svg" alt="Eight34" width="26" height="26" />
-        <span class="brand-name">Eight34 Labs</span>
-      </a>
-      <nav class="nav-links">
-        <a href="#services">Capabilities</a>
-        <a href="#standards">Standards</a>
-        <a href="#process">Process</a>
-        <a href="https://portfolio.e34labs.com" target="_blank" rel="noreferrer">
-          Portfolio ↗
-        </a>
-        <a class="btn-primary" href="https://app.e34labs.com">
-          Client Portal
-        </a>
-      </nav>
-      <button class="nav-hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-    </header>
-    <nav class="nav-drawer" id="nav-drawer">
-      <a href="#services">Capabilities</a>
-      <a href="#standards">Standards</a>
-      <a href="#process">Process</a>
-      <a href="https://portfolio.e34labs.com" target="_blank" rel="noreferrer">Portfolio ↗</a>
-      <a href="https://app.e34labs.com" style="font-weight: 600; color: var(--ink-950);">Client Portal →</a>
-    </nav>
-  </div>
-
   <main>
     <!-- Hero -->
     <section class="hero">
       <div class="hero-pill">
         <span class="status-dot"></span>
-        <span>Independent Web Engineering Studio</span>
+        <span>AI consultancy for local business</span>
       </div>
 
       <h1>
-        We build websites and digital products that feel like the <em>future</em>.
+        Practical AI that helps your business <em>save money</em> — not chase hype.
       </h1>
 
       <p>
-        An engineering studio crafting brand-defining websites, bespoke full-stack applications, and lightweight telemetry infrastructure for ambitious teams.
+        Eight34 Labs helps shops, restaurants, offices, and service businesses find the few places AI genuinely cuts costs and hours — then sets it up for you, trains your team, and stays nearby in Ridgewood, New Jersey.
       </p>
 
       <div class="hero-actions">
-        <a class="btn-primary" href="#contact" style="padding: 10px 22px; font-size: 14px;">
-          Start a Project ↓
+        <a class="btn-primary" href="/contact" style="padding: 10px 22px; font-size: 14px;">
+          Contact Us →
         </a>
-        <a class="btn-outline" href="https://portfolio.e34labs.com" target="_blank" rel="noreferrer" style="padding: 10px 22px; font-size: 14px;">
-          Explore Selected Work ↗
+        <a class="btn-outline" href="/services" style="padding: 10px 22px; font-size: 14px;">
+          See what we set up
         </a>
       </div>
     </section>
 
-    <!-- Services / Capabilities -->
-    <section class="section" id="services">
-      <div class="section-head">
-        <h2>Studio Capabilities</h2>
-        <p>Radical attention to typography, sub-second latency, and clean architecture.</p>
-      </div>
-
+    <!-- Trust chips -->
+    <section class="section" style="padding-top: 0;">
       <div class="services-grid">
         <div class="service-card">
-          <span class="num">01 / EDITORIAL &amp; BRAND</span>
-          <h3>High-Velocity Brand Sites</h3>
-          <p>
-            Digital showcases engineered with zero layout shift, sub-second TTFB, fluid typography, and 100/100 Lighthouse performance benchmarks.
-          </p>
+          <span class="num">START LOCAL</span>
+          <h3>Start local</h3>
+          <p>Ridgewood first, then Bergen County, then NJ</p>
         </div>
-
         <div class="service-card">
-          <span class="num">02 / FULL-STACK PLATFORMS</span>
-          <h3>Modern Web Applications</h3>
-          <p>
-            Scalable SaaS products, client portals, and internal tools built on Next.js, React 19, Supabase, PostgreSQL, and TypeScript.
-          </p>
+          <span class="num">PLAIN ENGLISH</span>
+          <h3>Plain English</h3>
+          <p>No jargon, no lock-in, no overselling</p>
         </div>
-
         <div class="service-card">
-          <span class="num">03 / TELEMETRY &amp; TAGS</span>
-          <h3>Privacy-First Analytics</h3>
-          <p>
-            An ultra-lightweight 1.5KB telemetry engine embedded directly into your stack. Zero cookies, zero GDPR banners, pure clarity.
-          </p>
+          <span class="num">DONE WITH YOU</span>
+          <h3>Done with you</h3>
+          <p>We configure it — you keep control</p>
         </div>
       </div>
     </section>
 
-    <!-- Engineering Standards -->
-    <section class="section" id="standards" style="border-top: 1px solid var(--ink-150);">
+    <!-- What we do -->
+    <section class="section" style="border-top: 1px solid var(--ink-150);">
       <div class="section-head">
-        <h2>Engineering Standards</h2>
-        <p>Every platform we build is engineered for speed, long-term stability, and minimal maintenance.</p>
+        <h2>What we do</h2>
+        <p>Find the waste. Automate the boring parts. Keep the human parts human.</p>
       </div>
-
-      <div class="standards-grid">
-        <div class="standard-card">
-          <div class="icon-chip">⚡</div>
-          <h3>Sub-50ms TTFB &amp; Zero Layout Shift</h3>
-          <p>
-            We optimize asset pipelines, critical render paths, and edge caching so your visitors experience instantaneous navigation without jitter.
-          </p>
+      <p style="font-size: 15px; color: var(--ink-500); max-width: 600px; margin-bottom: 40px;">
+        Most small businesses don&rsquo;t need an &ldquo;AI strategy.&rdquo; They need someone to look at the weekly grind — inbox, scheduling, invoices, follow-ups, inventory — and quietly remove the hours that shouldn&rsquo;t be there.
+      </p>
+      <div class="services-grid">
+        <div class="service-card">
+          <span class="num">01 · AUDIT</span>
+          <h3>AI Opportunity Audit</h3>
+          <p>We sit with you, map how work actually flows through your business, and rank the spots where AI saves real time or money — including the honest answer &ldquo;not worth it&rdquo; where it applies.</p>
         </div>
-
-        <div class="standard-card">
-          <div class="icon-chip">🛡️</div>
-          <h3>Native TypeScript &amp; Zero Bloat</h3>
-          <p>
-            Rock-solid architectures without messy legacy plugins or unmaintainable dependencies. Everything is strictly typed and clean.
-          </p>
+        <div class="service-card">
+          <span class="num">02 · SETUP</span>
+          <h3>Setup &amp; Integration</h3>
+          <p>We choose tools that fit your budget and your existing software, connect them, and configure them properly — inboxes, booking, documents, customer questions, back-office tasks.</p>
         </div>
-
-        <div class="standard-card">
-          <div class="icon-chip">🎨</div>
-          <h3>Tactile Micro-Interactions</h3>
-          <p>
-            60fps GPU-accelerated motion and subtle interactive states that elevate your brand and improve visitor conversion rates.
-          </p>
+        <div class="service-card">
+          <span class="num">03 · SUPPORT</span>
+          <h3>Training &amp; Ongoing Help</h3>
+          <p>Your team learns the new workflow in plain language, with simple guides. Then we check in, tune what&rsquo;s not working, and add the next improvement only when the first one is paying off.</p>
         </div>
       </div>
+      <p style="margin-top: 28px;">
+        <a class="btn-outline" href="/services" style="padding: 10px 22px; font-size: 14px;">Explore services in detail →</a>
+      </p>
     </section>
 
-    <!-- The Studio Process -->
-    <section class="section" id="process" style="border-top: 1px solid var(--ink-150);">
+    <!-- Why local -->
+    <section class="section" style="border-top: 1px solid var(--ink-150);">
       <div class="section-head">
-        <h2>How We Collaborate</h2>
-        <p>A transparent, high-velocity engineering process from first conversation to live deployment.</p>
+        <h2>Why local, why now</h2>
+        <p>Big firms sell platforms. We sit at your counter.</p>
       </div>
-
-      <div class="process-grid">
-        <div class="process-step">
-          <span class="step-badge">PHASE 01</span>
-          <h3>Architecture Blueprint</h3>
-          <p>
-            We align on visual direction, technical specifications, database schema, and delivery milestones with zero ambiguity.
-          </p>
+      <p style="font-size: 15px; color: var(--ink-500); max-width: 600px; margin-bottom: 40px;">
+        AI tools got cheap and capable fast — but the setup is where local businesses lose. Wrong tool, wrong settings, no training, and it becomes one more subscription nobody uses.
+      </p>
+      <div class="services-grid">
+        <div class="service-card">
+          <span class="num">IN-PERSON</span>
+          <h3>In-person where it matters</h3>
+          <p>Based in Ridgewood — we can be at your shop, not on a sales call three time zones away.</p>
         </div>
-
-        <div class="process-step">
-          <span class="step-badge">PHASE 02</span>
-          <h3>High-Craft Development</h3>
-          <p>
-            Continuous staging environments with weekly live walkthroughs, allowing you to test interactions and provide feedback in real time.
-          </p>
+        <div class="service-card">
+          <span class="num">YOUR TOOLS</span>
+          <h3>Built around your tools</h3>
+          <p>We work with the email, calendar, point-of-sale, and software you already pay for.</p>
         </div>
-
-        <div class="process-step">
-          <span class="step-badge">PHASE 03</span>
-          <h3>Production &amp; Hypercare</h3>
-          <p>
-            Edge DNS setup, Lighthouse speed audits, zero-downtime deployment, and dedicated post-launch hypercare support.
-          </p>
+        <div class="service-card">
+          <span class="num">SAVINGS FIRST</span>
+          <h3>Savings first, technology second</h3>
+          <p>Every recommendation has to name the hours or dollars it gives back — or we don&rsquo;t recommend it.</p>
         </div>
       </div>
     </section>
 
-    <!-- Contact -->
-    <section class="section" id="contact" style="border-top: 1px solid var(--ink-150); padding-bottom: 90px;">
+    <!-- Explore index -->
+    <section class="section" style="border-top: 1px solid var(--ink-150);">
+      <div class="section-head">
+        <h2>Explore Eight34 Labs</h2>
+        <p>Everything else, in full.</p>
+      </div>
+      <p style="font-size: 15px; color: var(--ink-500); max-width: 600px; margin-bottom: 40px;">
+        The short version is above. The full picture — what we set up, how we work, where we work, and who is behind it — lives on these pages.
+      </p>
+      <div class="services-grid">
+        <div class="service-card">
+          <span class="num">SERVICES</span>
+          <h3>What we set up</h3>
+          <p>Every service in detail, what a first project actually includes, the worksheet to size up your own busywork, and straight answers to the questions owners ask us.</p>
+          <p style="margin-top: 16px;"><a href="/services" style="font-weight: 600; color: var(--ink-950);">Go to Services →</a></p>
+        </div>
+        <div class="service-card">
+          <span class="num">PROCESS</span>
+          <h3>How we collaborate</h3>
+          <p>Phase by phase: what happens, what you get, what we need from you, and what working together looks like week to week — before, during, and after setup.</p>
+          <p style="margin-top: 16px;"><a href="/process" style="font-weight: 600; color: var(--ink-950);">Go to Process →</a></p>
+        </div>
+        <div class="service-card">
+          <span class="num">LOCAL FOCUS</span>
+          <h3>Where we work</h3>
+          <p>Why we start in Ridgewood, the Bergen County businesses we are built for, how the county rollout works, and what comes next across New Jersey.</p>
+          <p style="margin-top: 16px;"><a href="/local" style="font-weight: 600; color: var(--ink-950);">Go to Local Focus →</a></p>
+        </div>
+        <div class="service-card">
+          <span class="num">ABOUT</span>
+          <h3>Who is behind it</h3>
+          <p>Meet Tee Jay, how Eight34 grew from a web engineering studio into an AI consultancy, the principles we work by, and how we measure whether any of this is working.</p>
+          <p style="margin-top: 16px;"><a href="/about" style="font-weight: 600; color: var(--ink-950);">Go to About →</a></p>
+        </div>
+        <div class="service-card">
+          <span class="num">CONTACT</span>
+          <h3>Start a conversation</h3>
+          <p>What to tell us, what happens after you reach out, how to prepare for a first conversation, and the fastest way to get a reply from Tee Jay.</p>
+          <p style="margin-top: 16px;"><a href="/contact" style="font-weight: 600; color: var(--ink-950);">Go to Contact →</a></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Closing CTA -->
+    <section class="section" style="border-top: 1px solid var(--ink-150); padding-bottom: 90px;">
       <div class="contact-cta-box">
-        <h2>Let&apos;s build something memorable.</h2>
-        <p>
-          Have an upcoming project, brand launch, or web platform? We typically respond with technical scope within 24 hours.
-        </p>
+        <h2>No pitch deck. No pressure.</h2>
+        <p>Start with a conversation about where your week actually goes.</p>
         <div class="contact-cta-actions">
-          <a class="btn-primary" href="mailto:hello@e34labs.com" style="padding: 12px 24px; font-size: 14.5px;">
-            Start a Conversation (hello@e34labs.com) ↗
-          </a>
-          <a class="btn-outline" href="https://portfolio.e34labs.com" target="_blank" rel="noreferrer" style="padding: 12px 24px; font-size: 14.5px;">
-            View Founder Portfolio ↗
+          <a class="btn-primary" href="/contact" style="padding: 12px 24px; font-size: 14.5px;">
+            Contact Us →
           </a>
         </div>
       </div>
     </section>
   </main>
-
-  <footer class="site-footer">
-    <div>
-      © 2026 Eight34 Labs Inc. All rights reserved.
-    </div>
-    <div style="display: flex; gap: 20px; flex-wrap: wrap;">
-      <a href="https://portfolio.e34labs.com" target="_blank" rel="noreferrer">Portfolio</a>
-      <a href="https://app.e34labs.com">Client Portal</a>
-      <a href="mailto:hello@e34labs.com">hello@e34labs.com</a>
-    </div>
-  </footer>
-
-  <script is:inline>
-    const btn = document.getElementById('hamburger');
-    const drawer = document.getElementById('nav-drawer');
-    if (btn && drawer) {
-      btn.addEventListener('click', () => {
-        const open = drawer.classList.toggle('open');
-        btn.setAttribute('aria-expanded', String(open));
-      });
-      // Close drawer when any drawer link is clicked
-      drawer.querySelectorAll('a').forEach(function(a) {
-        a.addEventListener('click', function() {
-          drawer.classList.remove('open');
-          btn.setAttribute('aria-expanded', 'false');
-        });
-      });
-    }
-  </script>
 </Layout>

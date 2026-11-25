@@ -1,5 +1,6 @@
 ---
 import '../styles/global.css';
+import '../styles/consultancy.css';
 
 interface Props {
   title?: string;
@@ -7,8 +8,8 @@ interface Props {
 }
 
 const {
-  title = 'Eight34 Labs — Web Engineering Studio',
-  description = 'An independent web engineering studio crafting brand-defining websites, bespoke full-stack applications, and lightweight telemetry infrastructure for ambitious teams.',
+  title = 'Eight34 Labs — AI Consultancy for Local Business',
+  description = 'Eight34 Labs helps shops, restaurants, offices, and service businesses in Ridgewood, New Jersey find the few places AI genuinely cuts costs and hours — then sets it up for you.',
 } = Astro.props;
 ---
 
@@ -21,10 +22,75 @@ const {
     <meta name="description" content={description} />
     <link rel="icon" type="image/svg+xml" href="/E34_Short.svg" />
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-    <!-- Eight34 Analytics Tracker -->
-    <script defer src="https://app.e34labs.com/eight34.js" data-site="e34_140f9a57e7b1b9084d108dfe"></script>
   </head>
   <body>
+    <div class="site-header-wrap">
+      <header class="site-header">
+        <a href="/" class="brand-wrap">
+          <img src="/E34_Short.svg" alt="Eight34" width="26" height="26" />
+          <span class="brand-name">Eight34 Labs</span>
+        </a>
+        <nav class="nav-links">
+          <a href="/">Home</a>
+          <a href="/services">Services</a>
+          <a href="/process">Process</a>
+          <a href="/local">Local Focus</a>
+          <a href="/about">About</a>
+          <a class="btn-primary" href="/contact">Contact Us</a>
+        </nav>
+        <button class="nav-hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </header>
+      <nav class="nav-drawer" id="nav-drawer">
+        <a href="/">Home</a>
+        <a href="/services">Services</a>
+        <a href="/process">Process</a>
+        <a href="/local">Local Focus</a>
+        <a href="/about">About</a>
+        <a href="/contact" style="font-weight: 600; color: var(--ink-950);">Contact Us →</a>
+      </nav>
+    </div>
+
     <slot />
+
+    <footer class="site-footer">
+      <div>
+        <div style="font-weight: 700; color: var(--ink-950); margin-bottom: 4px;">Eight34 Labs</div>
+        <div>Practical AI consultancy for local business. Ridgewood, NJ — growing across Bergen County and New Jersey.</div>
+        <div style="margin-top: 8px;">© 2026 Eight34 Labs. All rights reserved.</div>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 6px; align-items: flex-start;">
+        <a href="/">Home</a>
+        <a href="/services">Services</a>
+        <a href="/process">Process</a>
+        <a href="/local">Local Focus</a>
+        <a href="/about">About</a>
+        <a href="/contact">Contact Us</a>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 6px; align-items: flex-start;">
+        <a href="https://www.linkedin.com/in/teejay834/" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+        <a href="mailto:hello@e34labs.com">hello@e34labs.com</a>
+      </div>
+    </footer>
+
+    <script is:inline>
+      const btn = document.getElementById('hamburger');
+      const drawer = document.getElementById('nav-drawer');
+      if (btn && drawer) {
+        btn.addEventListener('click', () => {
+          const open = drawer.classList.toggle('open');
+          btn.setAttribute('aria-expanded', String(open));
+        });
+        drawer.querySelectorAll('a').forEach(function (a) {
+          a.addEventListener('click', function () {
+            drawer.classList.remove('open');
+            btn.setAttribute('aria-expanded', 'false');
+          });
+        });
+      }
+    </script>
   </body>
 </html>
