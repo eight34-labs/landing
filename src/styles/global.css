@@ -215,6 +215,10 @@ a {
   margin-bottom: 22px;
 }
 
+.hero h1 em {
+  font-style: italic;
+}
+
 .hero p {
   font-size: clamp(15px, 2.2vw, 19px);
   color: var(--ink-500);
@@ -294,6 +298,26 @@ a {
   font-size: 13.5px;
   color: var(--ink-500);
   line-height: 1.55;
+}
+
+.service-card ul {
+  list-style: none;
+  margin-top: 12px;
+}
+
+.service-card ul li {
+  font-size: 13.5px;
+  color: var(--ink-500);
+  line-height: 1.55;
+  padding: 4px 0 4px 16px;
+  position: relative;
+}
+
+.service-card ul li::before {
+  content: "—";
+  position: absolute;
+  left: 0;
+  color: var(--ink-400);
 }
 
 /* ── Standards Grid ──────────────────────────────────────── */
@@ -409,12 +433,20 @@ a {
   max-width: 1080px;
   margin: 0 auto;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
   font-size: 12.5px;
   color: var(--ink-400);
-  gap: 16px;
+  gap: 24px;
   flex-wrap: wrap;
+}
+
+.site-footer a {
+  color: var(--ink-500);
+}
+
+.site-footer a:hover {
+  color: var(--ink-950);
 }
 
 /* ── Mobile Breakpoints ──────────────────────────────────── */
