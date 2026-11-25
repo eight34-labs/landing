@@ -4,45 +4,41 @@ import Layout from '../layouts/Layout.astro';
 
 <Layout>
   <main>
-    <!-- Hero -->
-    <section class="hero">
-      <div class="hero-pill">
-        <span class="status-dot"></span>
-        <span>AI consultancy for local business</span>
-      </div>
+    <!-- Hero — full-bleed meadow photo -->
+    <section class="hero-photo">
+      <div class="hero">
+        <p class="hero-label">AI consultancy for local business</p>
 
-      <h1>
-        Practical AI that helps your business <em>save money</em> — not chase hype.
-      </h1>
+        <h1>
+          Practical AI that helps your business <em>save money</em> — not chase hype.
+        </h1>
 
-      <p>
-        Eight34 Labs helps shops, restaurants, offices, and service businesses find the few places AI genuinely cuts costs and hours — then sets it up for you, trains your team, and stays nearby in Ridgewood, New Jersey.
-      </p>
+        <p>
+          Eight34 Labs helps shops, restaurants, offices, and service businesses find the few places AI genuinely cuts costs and hours — then sets it up for you, trains your team, and works anywhere — remote setup, wherever your business is.
+        </p>
 
-      <div class="hero-actions">
-        <a class="btn-primary" href="/contact" style="padding: 10px 22px; font-size: 14px;">
-          Contact Us →
-        </a>
-        <a class="btn-outline" href="/services" style="padding: 10px 22px; font-size: 14px;">
-          See what we set up
-        </a>
-      </div>
-    </section>
-
-    <!-- Trust chips -->
-    <section class="section" style="padding-top: 0;">
-      <div class="services-grid">
-        <div class="service-card">
-          <span class="num">START LOCAL</span>
-          <h3>Start local</h3>
-          <p>Ridgewood first, then Bergen County, then NJ</p>
+        <div class="hero-actions">
+          <a class="btn-primary" href="/contact" style="padding: 10px 22px; font-size: 14px;">
+            Contact Us →
+          </a>
+          <a class="btn-outline" href="/services" style="padding: 10px 22px; font-size: 14px;">
+            See what we set up
+          </a>
         </div>
-        <div class="service-card">
+      </div>
+
+      <div class="hero-chips">
+        <div class="hero-chip">
+          <span class="num">START SMALL</span>
+          <h3>Start small</h3>
+          <p>One workflow, working, before the next</p>
+        </div>
+        <div class="hero-chip">
           <span class="num">PLAIN ENGLISH</span>
           <h3>Plain English</h3>
           <p>No jargon, no lock-in, no overselling</p>
         </div>
-        <div class="service-card">
+        <div class="hero-chip">
           <span class="num">DONE WITH YOU</span>
           <h3>Done with you</h3>
           <p>We configure it — you keep control</p>
@@ -92,9 +88,9 @@ import Layout from '../layouts/Layout.astro';
       </p>
       <div class="services-grid">
         <div class="service-card">
-          <span class="num">IN-PERSON</span>
-          <h3>In-person where it matters</h3>
-          <p>Based in Ridgewood — we can be at your shop, not on a sales call three time zones away.</p>
+          <span class="num">REMOTE, DONE RIGHT</span>
+          <h3>Remote setup, done properly</h3>
+          <p>We configure everything remotely, with live walkthroughs and plain-English guides — wherever your business is.</p>
         </div>
         <div class="service-card">
           <span class="num">YOUR TOOLS</span>
@@ -109,51 +105,9 @@ import Layout from '../layouts/Layout.astro';
       </div>
     </section>
 
-    <!-- Explore index -->
-    <section class="section" style="border-top: 1px solid var(--ink-150);">
-      <div class="section-head">
-        <h2>Explore Eight34 Labs</h2>
-        <p>Everything else, in full.</p>
-      </div>
-      <p style="font-size: 15px; color: var(--ink-500); max-width: 600px; margin-bottom: 40px;">
-        The short version is above. The full picture — what we set up, how we work, where we work, and who is behind it — lives on these pages.
-      </p>
-      <div class="services-grid">
-        <div class="service-card">
-          <span class="num">SERVICES</span>
-          <h3>What we set up</h3>
-          <p>Every service in detail, what a first project actually includes, the worksheet to size up your own busywork, and straight answers to the questions owners ask us.</p>
-          <p style="margin-top: 16px;"><a href="/services" style="font-weight: 600; color: var(--ink-950);">Go to Services →</a></p>
-        </div>
-        <div class="service-card">
-          <span class="num">PROCESS</span>
-          <h3>How we collaborate</h3>
-          <p>Phase by phase: what happens, what you get, what we need from you, and what working together looks like week to week — before, during, and after setup.</p>
-          <p style="margin-top: 16px;"><a href="/process" style="font-weight: 600; color: var(--ink-950);">Go to Process →</a></p>
-        </div>
-        <div class="service-card">
-          <span class="num">LOCAL FOCUS</span>
-          <h3>Where we work</h3>
-          <p>Why we start in Ridgewood, the Bergen County businesses we are built for, how the county rollout works, and what comes next across New Jersey.</p>
-          <p style="margin-top: 16px;"><a href="/local" style="font-weight: 600; color: var(--ink-950);">Go to Local Focus →</a></p>
-        </div>
-        <div class="service-card">
-          <span class="num">ABOUT</span>
-          <h3>Who is behind it</h3>
-          <p>Meet Tee Jay, how Eight34 grew from a web engineering studio into an AI consultancy, the principles we work by, and how we measure whether any of this is working.</p>
-          <p style="margin-top: 16px;"><a href="/about" style="font-weight: 600; color: var(--ink-950);">Go to About →</a></p>
-        </div>
-        <div class="service-card">
-          <span class="num">CONTACT</span>
-          <h3>Start a conversation</h3>
-          <p>What to tell us, what happens after you reach out, how to prepare for a first conversation, and the fastest way to get a reply from Tee Jay.</p>
-          <p style="margin-top: 16px;"><a href="/contact" style="font-weight: 600; color: var(--ink-950);">Go to Contact →</a></p>
-        </div>
-      </div>
-    </section>
 
     <!-- Closing CTA -->
-    <section class="section" style="border-top: 1px solid var(--ink-150); padding-bottom: 90px;">
+    <section class="section" style="border-top: 1px solid var(--ink-150); padding-bottom: 118px;">
       <div class="contact-cta-box">
         <h2>No pitch deck. No pressure.</h2>
         <p>Start with a conversation about where your week actually goes.</p>

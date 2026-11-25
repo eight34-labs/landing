@@ -2,35 +2,37 @@
 import Layout from '../layouts/Layout.astro';
 ---
 
-<Layout title="Process — Eight34 Labs" description="Three phases, small steps, nothing big-bang: Discover, Set Up, Tune & Grow — with what you get, what we need from you, and what happens after launch.">
+<Layout title="Process — Eight34 Labs" description="Three phases, small steps, nothing big-bang: Discover, Set Up, Tune & Grow — with what you get, what we need from you, and what happens after launch." skyWash>
   <main>
     <section class="page-hero">
-      <div class="hero-pill">
-        <span class="status-dot"></span>
-        <span>Process</span>
-      </div>
+      <p class="hero-label">Process</p>
       <h1>How we collaborate</h1>
       <p>Three phases. Small steps. Nothing big-bang.</p>
       <p>The same discipline from our engineering roots, applied to AI setup: understand first, build the smallest useful thing, then improve it with real use.</p>
+      <div class="phase-strip">
+        <span><strong>01</strong>Discover</span>
+        <span><strong>02</strong>Set Up</span>
+        <span><strong>03</strong>Tune &amp; Grow</span>
+      </div>
     </section>
 
     <!-- Three phases -->
     <section class="section" style="padding-top: 0;">
-      <div class="process-grid">
-        <div class="process-step">
-          <span class="step-badge">01</span>
+      <div class="timeline">
+        <div class="timeline-step">
+          <span class="phase-chip">01</span>
           <h3>Discover</h3>
           <p>We meet at your business, watch how the week actually runs, and interview the people doing the work. You get a ranked, costed plan — including what we&rsquo;d leave alone.</p>
           <p style="margin-top: 12px; font-family: var(--font-mono); font-size: 11px; color: var(--ink-400);">Starts with a conversation</p>
         </div>
-        <div class="process-step">
-          <span class="step-badge">02</span>
+        <div class="timeline-step">
+          <span class="phase-chip">02</span>
           <h3>Set Up</h3>
           <p>We configure the first workflow end-to-end: tools chosen, connected, tested with your real scenarios, and your team trained on it. One thing working beats five things half-working.</p>
           <p style="margin-top: 12px; font-family: var(--font-mono); font-size: 11px; color: var(--ink-400);">Small, tested, trained</p>
         </div>
-        <div class="process-step">
-          <span class="step-badge">03</span>
+        <div class="timeline-step">
+          <span class="phase-chip">03</span>
           <h3>Tune &amp; Grow</h3>
           <p>We review what&rsquo;s saving time and what isn&rsquo;t, fix the friction, and only then add the next improvement. You always know what each piece costs and what it returns.</p>
           <p style="margin-top: 12px; font-family: var(--font-mono); font-size: 11px; color: var(--ink-400);">Ongoing, at your pace</p>
@@ -71,99 +73,10 @@ import Layout from '../layouts/Layout.astro';
       </div>
     </section>
 
-    <!-- Phase by phase -->
-    <section class="section" style="border-top: 1px solid var(--ink-150);">
-      <div class="section-head">
-        <h2>Phase by phase</h2>
-        <p>What you get — and what we need from you</p>
-      </div>
-      <p style="font-size: 15px; color: var(--ink-500); max-width: 600px; margin-bottom: 40px;">
-        No surprises about who does what. Our part is the technical work; your part is the knowledge only you have about your business.
-      </p>
 
-      <div class="services-grid" style="margin-bottom: 20px;">
-        <div class="service-card">
-          <span class="num">PHASE 01 · DISCOVER</span>
-          <h3>You get</h3>
-          <p>A ranked, costed plan: which workflows to automate, which to leave alone, what each would cost, and what it should give back.</p>
-          <ul>
-            <li>Workflow walkthrough at your business</li>
-            <li>Ranked recommendations, in plain English</li>
-            <li>Costs itemized before any commitment</li>
-          </ul>
-        </div>
-        <div class="service-card">
-          <span class="num">PHASE 02 · SET UP</span>
-          <h3>You get</h3>
-          <p>One workflow working end-to-end — tools chosen and connected under your accounts, tested on your real questions and edge cases, with your team trained on it.</p>
-          <ul>
-            <li>Configuration &amp; connection of tools</li>
-            <li>Testing before anything goes live</li>
-            <li>Hands-on team training + written guide</li>
-          </ul>
-        </div>
-        <div class="service-card">
-          <span class="num">PHASE 03 · TUNE &amp; GROW</span>
-          <h3>You get</h3>
-          <p>A review of what is actually saving time, fixes for the friction, and a clear recommendation: keep, tune, expand — or stop. Expansion is always your call.</p>
-          <ul>
-            <li>Check-ins at a pace that suits you</li>
-            <li>Adjustments based on real use</li>
-            <li>Honest advice on the next tool, if any</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="services-grid">
-        <div class="service-card">
-          <span class="num">YOUR PART</span>
-          <h3>Your part</h3>
-          <ul>
-            <li>One conversation about how your week actually runs</li>
-            <li>Access to the tools and accounts involved in the setup</li>
-            <li>A person on your team who can try the workflow and tell us what&rsquo;s off</li>
-            <li>The final say on anything customer-facing before it goes live</li>
-          </ul>
-        </div>
-        <div class="service-card">
-          <span class="num">OUR PART</span>
-          <h3>Our part</h3>
-          <ul>
-            <li>Tool selection, setup, configuration, and connection</li>
-            <li>Privacy settings and escalation rules, configured as part of the build</li>
-            <li>Testing, training, and the plain-English handover guide</li>
-            <li>Staying reachable after launch — locally, not through a ticket queue overseas</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <!-- After launch FAQs -->
-    <section class="section" style="border-top: 1px solid var(--ink-150);">
-      <div class="section-head">
-        <h2>After launch</h2>
-        <p>The work after the work</p>
-      </div>
-      <details class="faq">
-        <summary>How long does a typical setup take?</summary>
-        <p>It depends on the workflow, and the audit is where we give you a straight timeline before work starts. The pattern is deliberate: one workflow, properly finished, rather than a big launch that drags on. Small steps are the strategy, not a limitation.</p>
-      </details>
-      <details class="faq">
-        <summary>What if something breaks or answers wrong?</summary>
-        <p>Every customer-facing setup has escalation rules, so anything unusual goes to a human instead of being guessed at. And because everything lives in your accounts, nothing is locked away from you — we tune it with you during check-ins.</p>
-      </details>
-      <details class="faq">
-        <summary>Do we have to keep going after the first workflow?</summary>
-        <p>No. Each phase ends with a decision point that is yours. Plenty of businesses stop at one workflow that pays for itself — that is a good outcome, not a failed sale.</p>
-      </details>
-      <details class="faq">
-        <summary>Who owns the accounts and the data?</summary>
-        <p>You do — always. Tools are set up under your ownership, your customer information stays in your accounts, and the handover guide documents everything so you are never dependent on us to operate your own systems.</p>
-      </details>
-    </section>
 
     <!-- Closing CTA -->
-    <section class="section" style="border-top: 1px solid var(--ink-150); padding-bottom: 90px;">
+    <section class="section" style="border-top: 1px solid var(--ink-150); padding-bottom: 118px;">
       <div class="contact-cta-box">
         <h2>Phase 01 starts with a conversation</h2>
         <p>Tell us how your week runs, and we will map the first step.</p>

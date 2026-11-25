@@ -3,7 +3,7 @@
 .page-hero {
   max-width: 860px;
   margin: 0 auto;
-  padding: 90px 24px 60px;
+  padding: 120px 24px 80px;
   text-align: center;
 }
 
@@ -61,75 +61,11 @@
   color: var(--ink-400);
 }
 
-/* ── Worksheet tool ──────────────────────────────────────── */
-.tool {
-  background: var(--surface);
-  border: 1px solid var(--ink-150);
-  border-radius: 10px;
-  padding: 28px;
-  max-width: 760px;
-  margin: 0 auto;
-}
-
-.tool label {
-  display: block;
-  font-size: 13.5px;
-  font-weight: 600;
-  color: var(--ink-900);
-  margin: 16px 0 6px;
-}
-
-.tool label:first-child {
-  margin-top: 0;
-}
-
-.tool input[type="number"],
-.tool input[type="text"],
-.tool select,
-.tool textarea {
-  width: 100%;
-  padding: 10px 12px;
-  font-family: var(--font-sans);
-  font-size: 14px;
-  color: var(--ink-900);
-  background: var(--surface);
-  border: 1px solid var(--ink-200);
-  border-radius: 6px;
-}
-
-.tool input:focus,
-.tool select:focus,
-.tool textarea:focus {
-  outline: 2px solid var(--ink-300);
-  outline-offset: 1px;
-}
-
-.tool-result {
-  margin-top: 24px;
-  padding-top: 20px;
-  border-top: 1px solid var(--ink-150);
-  text-align: center;
-}
-
-.tool-result .result-amount {
-  font-size: clamp(28px, 4vw, 40px);
-  font-weight: 800;
-  letter-spacing: -0.05em;
-  color: var(--ink-950);
-}
-
-.tool-result p {
-  font-size: 13.5px;
-  color: var(--ink-500);
-  max-width: 520px;
-  margin: 8px auto 0;
-}
-
-/* ── FAQs ────────────────────────────────────────────────── */
+───────────────────────────────────────────────── */
 .faq {
   background: var(--surface);
   border: 1px solid var(--ink-150);
-  border-radius: 10px;
+  border-radius: 18px;
   padding: 20px 28px;
   margin-bottom: 12px;
 }
@@ -149,37 +85,12 @@
   margin-top: 10px;
 }
 
-/* ── Towns / principles grids ────────────────────────────── */
-.towns {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 12px;
-  list-style: none;
-}
-
-.towns li {
-  background: var(--surface);
-  border: 1px solid var(--ink-150);
-  border-radius: 10px;
-  padding: 14px 16px;
-  font-size: 14px;
-  font-weight: 600;
-  color: var(--ink-900);
-  text-align: center;
-}
-
-.principles-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
-}
-
-/* ── CTA band ────────────────────────────────────────────── */
+───────────────────────────────────────────── */
 .cta-band {
   background: var(--surface);
   border: 1px solid var(--ink-200);
-  border-radius: 12px;
-  padding: 48px 36px;
+  border-radius: 24px;
+  padding: 56px 44px;
   text-align: center;
   max-width: 760px;
   margin: 0 auto;
@@ -205,7 +116,7 @@
 .form-card {
   background: var(--surface);
   border: 1px solid var(--ink-150);
-  border-radius: 10px;
+  border-radius: 20px;
   padding: 28px;
 }
 
@@ -232,7 +143,7 @@
   color: var(--ink-900);
   background: var(--surface);
   border: 1px solid var(--ink-200);
-  border-radius: 6px;
+  border-radius: 14px;
 }
 
 .form-card input:focus,
@@ -270,7 +181,7 @@
 .goal-strip .goal-item {
   background: var(--surface);
   border: 1px solid var(--ink-150);
-  border-radius: 10px;
+  border-radius: 20px;
   padding: 28px;
   font-size: 17px;
   font-weight: 700;
@@ -278,32 +189,263 @@
   color: var(--ink-950);
 }
 
+/* ── Differentiated page layouts (same tokens, no new colors) ── */
+
+.service-rows {
+  border-top: 1px solid var(--ink-150);
+}
+
+.service-row {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  gap: 32px;
+  padding: 44px 0;
+  border-bottom: 1px solid var(--ink-150);
+}
+
+.service-row .num {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--ink-400);
+  display: block;
+  padding-top: 4px;
+}
+
+.service-row h3 {
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  margin-bottom: 10px;
+}
+
+.service-row p {
+  font-size: 14px;
+  color: var(--ink-500);
+  line-height: 1.6;
+}
+
+.service-row ul {
+  list-style: none;
+  margin-top: 12px;
+}
+
+.service-row ul li {
+  font-size: 13.5px;
+  color: var(--ink-500);
+  line-height: 1.55;
+  padding: 4px 0 4px 16px;
+  position: relative;
+}
+
+.service-row ul li::before {
+  content: "—";
+  position: absolute;
+  left: 0;
+  color: var(--ink-400);
+}
+
+/* Process — phase strip in the header, vertical timeline */
+.phase-strip {
+  display: flex;
+  justify-content: center;
+  gap: 0;
+  margin-top: 36px;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--ink-500);
+}
+
+.phase-strip span {
+  padding: 0 18px;
+  border-left: 1px solid var(--ink-200);
+}
+
+.phase-strip span:first-child {
+  border-left: none;
+  padding-left: 0;
+}
+
+.phase-strip span:last-child {
+  padding-right: 0;
+}
+
+.phase-strip strong {
+  color: var(--ink-950);
+  font-weight: 700;
+  margin-right: 8px;
+}
+
+.timeline {
+  border-left: 2px solid var(--ink-150);
+  margin-left: 6px;
+  padding-left: 36px;
+}
+
+.timeline-step {
+  padding-bottom: 56px;
+}
+
+.timeline-step:last-child {
+  padding-bottom: 0;
+}
+
+.phase-chip {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 700;
+  color: #ffffff;
+  background: var(--ink-950);
+  padding: 4px 10px;
+  border-radius: 999px;
+  margin-bottom: 14px;
+}
+
+.timeline-step h3 {
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  margin-bottom: 8px;
+}
+
+.timeline-step p {
+  font-size: 14px;
+  color: var(--ink-500);
+  line-height: 1.6;
+  max-width: 640px;
+}
+
+.manifesto-card {
+  background: var(--ink-950);
+  border-radius: 24px;
+  padding: 40px 36px;
+}
+
+.manifesto-card p {
+  font-size: 15px;
+  color: var(--ink-300);
+  line-height: 1.6;
+  max-width: 640px;
+}
+
+.ruled-rows {
+  border-top: 1px solid var(--ink-150);
+}
+
+.ruled-row {
+  display: grid;
+  grid-template-columns: 48px 1fr;
+  gap: 0 24px;
+  padding: 36px 0;
+  border-bottom: 1px solid var(--ink-150);
+}
+
+.ruled-row .num {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--ink-400);
+  grid-column: 1;
+  grid-row: 1 / span 2;
+  padding-top: 4px;
+}
+
+.ruled-row h3 {
+  grid-column: 2;
+  font-size: 19px;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  margin-bottom: 8px;
+}
+
+.ruled-row p {
+  grid-column: 2;
+  font-size: 14px;
+  color: var(--ink-500);
+  line-height: 1.6;
+  max-width: 640px;
+}
+
+/* Contact — ruled full-width header, panelled form, black fastest-route card */
+.page-hero--ruled {
+  max-width: 1000px;
+  text-align: left;
+  border-bottom: 1px solid var(--ink-150);
+  padding-bottom: 48px;
+}
+
+.page-hero--ruled h1,
+.page-hero--ruled p {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.form-panel {
+  border: 1px solid var(--ink-200);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03);
+  padding: 32px;
+}
+
+.form-status {
+  font-size: 13px;
+  color: var(--ink-500);
+  margin-top: 8px;
+}
+
+.fastest-route-card {
+  background: var(--ink-950);
+  border-color: var(--ink-950);
+}
+
+.fastest-route-card h3 {
+  color: #ffffff;
+}
+
+.fastest-route-card p {
+  color: var(--ink-300);
+}
+
+.fastest-route-card .btn-primary {
+  background: #ffffff;
+  color: var(--ink-950) !important;
+}
+
 @media (max-width: 760px) {
   .page-hero {
-    padding: 60px 20px 40px;
+    padding: 100px 20px 48px;
   }
 
-  .towns {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .principles-grid,
-  .goal-strip {
+  .service-row {
     grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .phase-strip {
+    flex-wrap: wrap;
+    gap: 8px 0;
+  }
+
+  .timeline {
+    padding-left: 24px;
+  }
+
+  .manifesto-card {
+    padding: 28px 20px;
+  }
+
+  .ruled-row {
+    grid-template-columns: 32px 1fr;
+    gap: 0 12px;
+  }
+
+  .form-panel {
+    padding: 20px;
   }
 
   .cta-band {
     padding: 32px 20px;
   }
 
-  .tool,
   .form-card {
     padding: 20px;
-  }
-}
-
-@media (min-width: 761px) and (max-width: 1020px) {
-  .towns {
-    grid-template-columns: repeat(3, 1fr);
   }
 }

@@ -2,13 +2,10 @@
 import Layout from '../layouts/Layout.astro';
 ---
 
-<Layout title="Contact — Eight34 Labs" description="Tell Tee Jay where your week goes. Fill in the form and get a ready-to-send inquiry, or reach Tee Jay directly on LinkedIn.">
+<Layout title="Contact — Eight34 Labs" description="Tell Tee Jay where your week goes. Fill in the form and get a ready-to-send inquiry, or reach Tee Jay directly on LinkedIn." skyWash>
   <main>
-    <section class="page-hero">
-      <div class="hero-pill">
-        <span class="status-dot"></span>
-        <span>Contact</span>
-      </div>
+    <section class="page-hero page-hero--ruled">
+      <p class="hero-label">Contact</p>
       <h1>Contact us</h1>
       <p>Tell us where your week goes.</p>
       <p>Fill this in and we&rsquo;ll turn it into a ready-to-send inquiry you can copy — or reach Tee Jay directly on LinkedIn. No newsletter, no spam, no obligation.</p>
@@ -17,17 +14,11 @@ import Layout from '../layouts/Layout.astro';
     <!-- Contact intro cards -->
     <section class="section" style="padding-top: 0;">
       <div class="services-grid">
-        <div class="service-card">
+        <div class="service-card fastest-route-card">
           <span class="num">FASTEST ROUTE</span>
           <h3>Fastest route</h3>
           <p>Message Tee Jay on LinkedIn — it&rsquo;s where Eight34 Labs conversations start.</p>
           <p style="margin-top: 16px;"><a class="btn-primary" href="https://www.linkedin.com/in/teejay834/" target="_blank" rel="noreferrer">Open LinkedIn ↗</a></p>
-        </div>
-        <div class="service-card">
-          <span class="num">BASED IN</span>
-          <h3>Based in</h3>
-          <p>Ridgewood, New Jersey — serving Bergen County in person, and the rest of New Jersey as we grow.</p>
-          <p style="margin-top: 16px;"><a href="mailto:hello@e34labs.com" style="font-weight: 600; color: var(--ink-950);">hello@e34labs.com</a></p>
         </div>
         <div class="service-card">
           <span class="num">WHAT HAPPENS NEXT</span>
@@ -43,7 +34,7 @@ import Layout from '../layouts/Layout.astro';
         <h2>Build your inquiry</h2>
         <p>Your inquiry, ready to send</p>
       </div>
-      <div class="form-card">
+      <div class="form-card form-panel">
         <label for="c-name">Your name</label>
         <input type="text" id="c-name" autocomplete="name" />
 
@@ -61,9 +52,6 @@ import Layout from '../layouts/Layout.astro';
           <option>Other local business</option>
         </select>
 
-        <label for="c-town">Town</label>
-        <input type="text" id="c-town" autocomplete="address-level2" />
-
         <label for="c-time">What eats most of your time right now?</label>
         <textarea id="c-time" rows="3"></textarea>
 
@@ -78,62 +66,14 @@ import Layout from '../layouts/Layout.astro';
 
         <label for="c-output" style="margin-top: 24px;">Your inquiry, ready to send</label>
         <textarea id="c-output" readonly rows="8" placeholder="Fill in the fields above, then choose “Build my inquiry message”."></textarea>
-        <p id="c-status" style="font-size: 13px; color: var(--ink-500); margin-top: 8px;"></p>
+        <p id="c-status" class="form-status"></p>
       </div>
     </section>
 
-    <!-- Before you write -->
-    <section class="section" style="border-top: 1px solid var(--ink-150);">
-      <div class="section-head">
-        <h2>Before you write</h2>
-        <p>Three things that make a first conversation actually useful</p>
-      </div>
-      <div class="services-grid">
-        <div class="service-card">
-          <span class="num">01</span>
-          <h3>The task you&rsquo;d hand off first</h3>
-          <p>If one repetitive job vanished from your week tomorrow, which would you pick? That&rsquo;s usually where the audit starts.</p>
-        </div>
-        <div class="service-card">
-          <span class="num">02</span>
-          <h3>Roughly what it costs you now</h3>
-          <p>Hours a week is plenty — the Services worksheet can help you size it up in a minute.</p>
-          <p style="margin-top: 16px;"><a href="/services" style="font-weight: 600; color: var(--ink-950);">Run the worksheet first →</a></p>
-        </div>
-        <div class="service-card">
-          <span class="num">03</span>
-          <h3>What you already use</h3>
-          <p>Email, booking, point-of-sale, office tools — a list of names is enough. We build around them, not over them.</p>
-        </div>
-      </div>
-    </section>
 
-    <!-- Contact FAQs -->
-    <section class="section" style="border-top: 1px solid var(--ink-150);">
-      <div class="section-head">
-        <h2>Before you reach out</h2>
-        <p>Straight answers</p>
-      </div>
-      <details class="faq">
-        <summary>How fast will I hear back?</summary>
-        <p>Messages go to Tee Jay directly — there is no sales team and no queue. If there&rsquo;s a fit, the next step is a short conversation at your business or by phone; if there isn&rsquo;t, you&rsquo;ll hear that plainly too.</p>
-      </details>
-      <details class="faq">
-        <summary>Do I need to prepare anything technical?</summary>
-        <p>No. Bring how your week runs and what eats it. The technical side — tools, setup, configuration — is our job, and the audit plan will lay out costs in writing before any work begins.</p>
-      </details>
-      <details class="faq">
-        <summary>I&rsquo;m not in Ridgewood. Can we still talk?</summary>
-        <p>Yes. Ridgewood is home base and Bergen County is next; if you&rsquo;re elsewhere in New Jersey — or further — tell us where you are and we&rsquo;ll be honest about whether we can serve you well yet.</p>
-      </details>
-      <details class="faq">
-        <summary>Is reaching out a commitment?</summary>
-        <p>Not at all. Contact starts a conversation. The audit comes before any build, specifically so you can see the expected payoff — and walk away — before committing to anything.</p>
-      </details>
-    </section>
 
     <!-- Closing CTA -->
-    <section class="section" style="border-top: 1px solid var(--ink-150); padding-bottom: 90px;">
+    <section class="section" style="border-top: 1px solid var(--ink-150); padding-bottom: 118px;">
       <div class="contact-cta-box">
         <h2>Prefer to just write?</h2>
         <p>Email hello@e34labs.com, or message Tee Jay on LinkedIn.</p>
@@ -161,13 +101,12 @@ import Layout from '../layouts/Layout.astro';
         var name = val('c-name');
         var business = val('c-business');
         var type = val('c-type');
-        var town = val('c-town');
         var time = val('c-time');
         var reach = val('c-reach');
         var lines = [];
         lines.push('Hi Tee Jay,');
         lines.push('');
-        lines.push('I run ' + (business || '[business name]') + (type ? ' (' + type + ')' : '') + (town ? ' in ' + town : '') + ' and I would like to talk about where AI could save us time or money.');
+        lines.push('I run ' + (business || '[business name]') + (type ? ' (' + type + ')' : '') + ' and I would like to talk about where AI could save us time or money.');
         if (time) lines.push('The work that eats most of our time right now is: ' + time + '.');
         if (name) lines.push('My name is ' + name + '.');
         if (reach) lines.push('The best way to reach me is: ' + reach + '.');
