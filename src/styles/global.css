@@ -256,7 +256,7 @@ body.sky-wash {
    copy is staged at public/meadow.jpg for any direct git push. */
 .hero-photo {
   position: relative;
-  background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/BLM_Applegate_Field_Office_Wildflower_Bloom_%2829544194310%29.jpg/1920px-BLM_Applegate_Field_Office_Wildflower_Bloom_%2829544194310%29.jpg') center 32% / cover no-repeat;
+  background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/BLM_Applegate_Field_Office_Wildflower_Bloom_%2829544194310%29.jpg/1920px-BLM_Applegate_Field_Office_Wildflower_Bloom_%2829544194310%29.jpg') center 30% / cover no-repeat;
   min-height: 92vh;
   display: flex;
   flex-direction: column;
@@ -264,6 +264,15 @@ body.sky-wash {
   gap: 72px;
   padding: 150px 24px 120px;
   overflow: hidden;
+}
+
+/* Pale wash over the photo so the hero text stays legible against the busy flowers */
+.hero-photo::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(248, 250, 248, 0.88), rgba(248, 250, 248, 0.74) 45%, rgba(248, 250, 248, 0.42) 75%, rgba(248, 250, 248, 0.12));
+  pointer-events: none;
 }
 
 /* Soft fade into the page below */
@@ -286,14 +295,16 @@ body.sky-wash {
 
 .hero-photo .hero-label {
   color: var(--ink-600);
+  text-shadow: 0 1px 2px rgba(255, 255, 255, 0.9), 0 1px 12px rgba(255, 255, 255, 0.8);
 }
 
 .hero-photo .hero h1 {
-  text-shadow: 0 2px 24px rgba(255, 255, 255, 0.55);
+  text-shadow: 0 1px 2px rgba(255, 255, 255, 0.9), 0 2px 28px rgba(255, 255, 255, 0.85);
 }
 
 .hero-photo .hero p {
-  text-shadow: 0 1px 12px rgba(255, 255, 255, 0.5);
+  color: #22312a;
+  text-shadow: 0 1px 2px rgba(255, 255, 255, 0.9), 0 1px 14px rgba(255, 255, 255, 0.8);
 }
 
 /* Frosted-glass chips over the photo */
