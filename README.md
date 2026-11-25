@@ -1,19 +1,16 @@
 # Eight34 Labs — AI Consultancy Site (`e34labs.com`)
 
-Eight34 Labs is an AI consultancy for local businesses, founded by Tee Jay. It helps shops, restaurants, offices, and service businesses in Ridgewood, New Jersey find the few places AI genuinely cuts costs and hours — then sets it up, trains the team, and stays nearby.
-
-Start in Ridgewood, then expand across Bergen County, then across New Jersey.
+Eight34 Labs is an AI consultancy for local businesses, founded by Tee Jay. It helps shops, restaurants, offices, and service businesses find the few places AI genuinely cuts costs and hours — then sets it up, trains the team, and supports it remotely, wherever the business is.
 
 ## Pages
 
 - `/` — Home
-- `/services` — Services, first-project walkthrough, busywork worksheet, FAQs
-- `/process` — Process, standards, phase-by-phase deliverables, after-launch FAQs
-- `/local` — Local Focus, Ridgewood / Bergen County / New Jersey rollout, towns
-- `/about` — About, Meet Tee Jay, principles, how we measure it
+- `/services` — Services, FAQs
+- `/process` — Process, standards
+- `/about` — About, Meet Tee Jay, principles
 - `/contact` — Contact, inquiry builder, LinkedIn route to Tee Jay
 
-All pages share the same header (Home / Services / Process / Local Focus / About, Contact Us button) and footer, in the original Eight34 Labs styling.
+All pages share the same header (Home / Services / Process / About, Contact Us button) and footer, in the original Eight34 Labs styling.
 
 ## Stack
 

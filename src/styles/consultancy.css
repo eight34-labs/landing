@@ -61,71 +61,7 @@
   color: var(--ink-400);
 }
 
-/* ── Worksheet tool ──────────────────────────────────────── */
-.tool {
-  background: var(--surface);
-  border: 1px solid var(--ink-150);
-  border-radius: 10px;
-  padding: 28px;
-  max-width: 760px;
-  margin: 0 auto;
-}
-
-.tool label {
-  display: block;
-  font-size: 13.5px;
-  font-weight: 600;
-  color: var(--ink-900);
-  margin: 16px 0 6px;
-}
-
-.tool label:first-child {
-  margin-top: 0;
-}
-
-.tool input[type="number"],
-.tool input[type="text"],
-.tool select,
-.tool textarea {
-  width: 100%;
-  padding: 10px 12px;
-  font-family: var(--font-sans);
-  font-size: 14px;
-  color: var(--ink-900);
-  background: var(--surface);
-  border: 1px solid var(--ink-200);
-  border-radius: 6px;
-}
-
-.tool input:focus,
-.tool select:focus,
-.tool textarea:focus {
-  outline: 2px solid var(--ink-300);
-  outline-offset: 1px;
-}
-
-.tool-result {
-  margin-top: 24px;
-  padding-top: 20px;
-  border-top: 1px solid var(--ink-150);
-  text-align: center;
-}
-
-.tool-result .result-amount {
-  font-size: clamp(28px, 4vw, 40px);
-  font-weight: 800;
-  letter-spacing: -0.05em;
-  color: var(--ink-950);
-}
-
-.tool-result p {
-  font-size: 13.5px;
-  color: var(--ink-500);
-  max-width: 520px;
-  margin: 8px auto 0;
-}
-
-/* ── FAQs ────────────────────────────────────────────────── */
+───────────────────────────────────────────────── */
 .faq {
   background: var(--surface);
   border: 1px solid var(--ink-150);
@@ -149,32 +85,7 @@
   margin-top: 10px;
 }
 
-/* ── Towns / principles grids ────────────────────────────── */
-.towns {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 12px;
-  list-style: none;
-}
-
-.towns li {
-  background: var(--surface);
-  border: 1px solid var(--ink-150);
-  border-radius: 10px;
-  padding: 14px 16px;
-  font-size: 14px;
-  font-weight: 600;
-  color: var(--ink-900);
-  text-align: center;
-}
-
-.principles-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
-}
-
-/* ── CTA band ────────────────────────────────────────────── */
+───────────────────────────────────────────── */
 .cta-band {
   background: var(--surface);
   border: 1px solid var(--ink-200);
@@ -280,67 +191,6 @@
 
 /* ── Differentiated page layouts (same tokens, no new colors) ── */
 
-/* Services — split header with "At a glance" index box */
-.page-hero--split {
-  max-width: 1000px;
-  text-align: left;
-}
-
-.services-split {
-  display: grid;
-  grid-template-columns: 1.6fr 1fr;
-  gap: 48px;
-  align-items: start;
-}
-
-.page-hero--split h1,
-.page-hero--split p {
-  margin-left: 0;
-  margin-right: 0;
-}
-
-.index-box {
-  background: var(--surface);
-  border: 1px solid var(--ink-150);
-  border-radius: 10px;
-  padding: 24px 28px;
-}
-
-.index-box .num {
-  font-family: var(--font-mono);
-  font-size: 11px;
-  color: var(--ink-400);
-  display: block;
-  margin-bottom: 16px;
-}
-
-.index-box ol {
-  list-style: none;
-}
-
-.index-box ol li {
-  padding: 10px 0;
-  border-top: 1px solid var(--ink-100);
-  font-size: 14px;
-  font-weight: 600;
-  color: var(--ink-900);
-  letter-spacing: -0.02em;
-}
-
-.index-box ol li:first-child {
-  border-top: none;
-  padding-top: 0;
-}
-
-.index-box ol li span {
-  font-family: var(--font-mono);
-  font-size: 11px;
-  color: var(--ink-400);
-  font-weight: 400;
-  margin-right: 10px;
-}
-
-/* Services — full-width editorial rows */
 .service-rows {
   border-top: 1px solid var(--ink-150);
 }
@@ -465,106 +315,10 @@
   max-width: 640px;
 }
 
-/* Local Focus — rollout strip + black home-base panel + town directory */
-.rollout-strip {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 14px;
-  margin-top: 36px;
-  font-family: var(--font-mono);
-  font-size: 12px;
-  color: var(--ink-500);
-  flex-wrap: wrap;
-}
-
-.rollout-strip strong {
-  color: var(--ink-950);
-  font-weight: 700;
-}
-
-.rollout-strip .arrow {
-  color: var(--ink-300);
-}
-
-.home-base-panel {
-  background: var(--ink-950);
-  border-radius: 12px;
-  padding: 40px 36px;
-}
-
-.home-base-row {
-  padding: 24px 0;
-  border-top: 1px solid var(--ink-700);
-}
-
-.home-base-row:first-child {
-  border-top: none;
-  padding-top: 0;
-}
-
-.home-base-row:last-child {
-  padding-bottom: 0;
-}
-
-.home-base-row .step-badge {
-  font-family: var(--font-mono);
-  font-size: 11px;
-  color: var(--ink-300);
-  background: transparent;
-  border: 1px solid var(--ink-700);
-  padding: 3px 8px;
-  border-radius: 4px;
-  display: inline-block;
-  margin-bottom: 14px;
-}
-
-.home-base-row h3 {
-  font-size: 20px;
-  font-weight: 700;
-  letter-spacing: -0.03em;
-  color: #ffffff;
-  margin-bottom: 8px;
-}
-
-.home-base-row p {
-  font-size: 14px;
-  color: var(--ink-300);
-  line-height: 1.6;
-  max-width: 640px;
-}
-
-.towns-directory li {
-  background: transparent;
-  border: none;
-  border-bottom: 1px solid var(--ink-150);
-  border-radius: 0;
-  padding: 14px 4px;
-  text-align: left;
-}
-
-.towns-directory li::before {
-  content: "— ";
-  color: var(--ink-300);
-}
-
-/* About — black goal manifesto card + ruled principle rows */
 .manifesto-card {
   background: var(--ink-950);
   border-radius: 12px;
   padding: 40px 36px;
-}
-
-.manifesto-card .manifesto-places {
-  font-family: var(--font-mono);
-  font-size: 12px;
-  color: var(--ink-300);
-  margin-bottom: 20px;
-}
-
-.manifesto-card .manifesto-places strong {
-  color: #ffffff;
-  font-weight: 700;
 }
 
 .manifesto-card p {
@@ -660,20 +414,6 @@
     padding: 60px 20px 40px;
   }
 
-  .towns {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .principles-grid,
-  .goal-strip {
-    grid-template-columns: 1fr;
-  }
-
-  .services-split {
-    grid-template-columns: 1fr;
-    gap: 28px;
-  }
-
   .service-row {
     grid-template-columns: 1fr;
     gap: 8px;
@@ -688,7 +428,6 @@
     padding-left: 24px;
   }
 
-  .home-base-panel,
   .manifesto-card {
     padding: 28px 20px;
   }
@@ -706,14 +445,7 @@
     padding: 32px 20px;
   }
 
-  .tool,
   .form-card {
     padding: 20px;
-  }
-}
-
-@media (min-width: 761px) and (max-width: 1020px) {
-  .towns {
-    grid-template-columns: repeat(3, 1fr);
   }
 }

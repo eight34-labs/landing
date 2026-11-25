@@ -2,25 +2,12 @@
 import Layout from '../layouts/Layout.astro';
 ---
 
-<Layout title="Services — Eight34 Labs" description="Four AI services for local businesses: audit, customer communication, back-office automation, and training — plus a worksheet to size up your own busywork.">
+<Layout title="Services — Eight34 Labs" description="Four AI services for businesses: audit, customer communication, back-office automation, and training.">
   <main>
-    <section class="page-hero page-hero--split">
-      <div class="services-split">
-        <div>
-          <p class="hero-label">Services</p>
-          <h1>Everything is aimed at one thing: <em>lower costs, fewer wasted hours.</em></h1>
-          <p>Four services, taken in order — or just the one you need. Each one ends with something working in your business, not a report that sits in a drawer.</p>
-        </div>
-        <aside class="index-box" aria-label="Services at a glance">
-          <span class="num">AT A GLANCE</span>
-          <ol>
-            <li><span>01</span>AI Opportunity Audit</li>
-            <li><span>02</span>Customer Communication</li>
-            <li><span>03</span>Back-Office Automation</li>
-            <li><span>04</span>Training &amp; Ongoing Support</li>
-          </ol>
-        </aside>
-      </div>
+    <section class="page-hero">
+      <p class="hero-label">Services</p>
+      <h1>Everything is aimed at one thing: <em>lower costs, fewer wasted hours.</em></h1>
+      <p>Four services, taken in order — or just the one you need. Each one ends with something working in your business, not a report that sits in a drawer.</p>
     </section>
 
     <!-- The four services -->
@@ -75,36 +62,6 @@ import Layout from '../layouts/Layout.astro';
       </div>
     </section>
 
-    <!-- First project -->
-    <section class="section" style="border-top: 1px solid var(--ink-150);">
-      <div class="section-head">
-        <h2>A first project, concretely</h2>
-        <p>What most businesses start with</p>
-      </div>
-      <p style="font-size: 15px; color: var(--ink-500); max-width: 600px; margin-bottom: 40px;">
-        Almost nobody starts with everything. Most first projects pick one workflow, get it working properly, and let the result decide what — if anything — comes next.
-      </p>
-      <div class="process-grid">
-        <div class="process-step">
-          <span class="step-badge">START</span>
-          <h3>One workflow, end-to-end</h3>
-          <p>Usually the loudest pain first: after-hours questions, booking and reminders, or the paperwork pile. Chosen in the audit, configured by us, tested against your real scenarios.</p>
-          <p style="margin-top: 12px; font-family: var(--font-mono); font-size: 11px; color: var(--ink-400);">Configured · Tested · Live</p>
-        </div>
-        <div class="process-step">
-          <span class="step-badge">LEARN</span>
-          <h3>Your team, actually using it</h3>
-          <p>A short hands-on session for the people who will touch it daily, plus a plain-English guide. If the team won&rsquo;t use it, it doesn&rsquo;t save anything — so this step is not optional.</p>
-          <p style="margin-top: 12px; font-family: var(--font-mono); font-size: 11px; color: var(--ink-400);">Training · Guide · Q&amp;A</p>
-        </div>
-        <div class="process-step">
-          <span class="step-badge">DECIDE</span>
-          <h3>Keep, tune, or stop</h3>
-          <p>After a few weeks of real use we review the numbers together: hours given back, problems caught, friction left. Keep what pays, tune what almost pays, remove what doesn&rsquo;t.</p>
-          <p style="margin-top: 12px; font-family: var(--font-mono); font-size: 11px; color: var(--ink-400);">Review · Tune · Next call is yours</p>
-        </div>
-      </div>
-    </section>
 
     <!-- Trio -->
     <section class="section" style="border-top: 1px solid var(--ink-150);">
@@ -127,33 +84,6 @@ import Layout from '../layouts/Layout.astro';
       </div>
     </section>
 
-    <!-- Worksheet -->
-    <section class="section" style="border-top: 1px solid var(--ink-150);">
-      <div class="section-head">
-        <h2>Do the rough math first</h2>
-        <p>What is repetitive work costing you?</p>
-      </div>
-      <p style="font-size: 15px; color: var(--ink-500); max-width: 600px; margin-bottom: 40px;">
-        This worksheet uses only your numbers. It won&rsquo;t promise savings — it shows the size of the pile, so the audit conversation starts from your reality.
-      </p>
-      <div class="tool">
-        <label for="ws-hours">Hours per week your team spends on repetitive tasks (inbox, scheduling, data entry, follow-ups)</label>
-        <input type="number" id="ws-hours" min="0" step="1" value="10" />
-        <label for="ws-rate">Average hourly cost of that time ($)</label>
-        <input type="number" id="ws-rate" min="0" step="1" value="25" />
-        <label for="ws-share">Share of that work that&rsquo;s routine enough to assist or automate</label>
-        <select id="ws-share">
-          <option value="0.25">A little — about a quarter</option>
-          <option value="0.5" selected>About half</option>
-          <option value="0.75">Most of it — about three quarters</option>
-        </select>
-        <div class="tool-result">
-          <div class="result-amount" id="ws-result">$6,500 / year</div>
-          <p id="ws-detail">That&rsquo;s roughly 260 hours a year of routine work at your numbers. An audit shows how much of it AI can genuinely take off your plate — and how much should stay human.</p>
-          <p style="margin-top: 20px;"><a class="btn-primary" href="/contact">Talk through my numbers →</a></p>
-        </div>
-      </div>
-    </section>
 
     <!-- FAQs -->
     <section class="section" style="border-top: 1px solid var(--ink-150);">
@@ -195,27 +125,4 @@ import Layout from '../layouts/Layout.astro';
     </section>
   </main>
 
-  <script is:inline>
-    (function () {
-      var hoursEl = document.getElementById('ws-hours');
-      var rateEl = document.getElementById('ws-rate');
-      var shareEl = document.getElementById('ws-share');
-      var resultEl = document.getElementById('ws-result');
-      var detailEl = document.getElementById('ws-detail');
-      if (!hoursEl || !rateEl || !shareEl || !resultEl || !detailEl) return;
-      function update() {
-        var hours = parseFloat(hoursEl.value) || 0;
-        var rate = parseFloat(rateEl.value) || 0;
-        var share = parseFloat(shareEl.value) || 0;
-        var yearly = Math.round(hours * 52 * rate * share);
-        var routineHours = Math.round(hours * 52 * share);
-        resultEl.textContent = '$' + yearly.toLocaleString('en-US') + ' / year';
-        detailEl.textContent = 'That\u2019s roughly ' + routineHours.toLocaleString('en-US') + ' hours a year of routine work at your numbers. An audit shows how much of it AI can genuinely take off your plate \u2014 and how much should stay human.';
-      }
-      hoursEl.addEventListener('input', update);
-      rateEl.addEventListener('input', update);
-      shareEl.addEventListener('change', update);
-      update();
-    })();
-  </script>
 </Layout>
